@@ -1,8 +1,9 @@
 # vanilla-js-demo
 vanilla js
 
-## 常用js
+## common js
 ```javascript
+// get an Element object
 document.getElementById('id');
 document.getElementsByClassName('');
 document.getElementsByTagName('');
