@@ -3,6 +3,9 @@ vanilla js
 
 ## 常用js
 ```javascript
+document.getElementById('id');
+document.getElementsByClassName('');
+document.getElementsByTagName('');
 const el = document.querySelector('#myId'); // 返回第一个匹配的element
 document.querySelectorAll('selector'); // 返回所有匹配element
 ```
