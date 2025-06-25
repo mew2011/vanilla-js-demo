@@ -39,3 +39,16 @@ el.classList.add(className);
 // remove class
 el.classList.remove(className);
 ```
+
+## input内容赋值
+```javascript
+// bing search input
+document.getElementById('sb_form_q').value = 'JavaScript';
+```
+
+## click事件
+```javascript
+let el = document.getElementById('btn_1');
+// eventHandler is a function
+el.addEventListener('click', eventHandler);
+```
