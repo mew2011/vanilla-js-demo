@@ -52,3 +52,37 @@ let el = document.getElementById('btn_1');
 // eventHandler is a function
 el.addEventListener('click', eventHandler);
 ```
+
+## ES6对象{}内部定义函数
+ES6规范指定了对象{}内部的字面量定义可以省略function
+```javascript
+// 省略 key-value 形式
+const Counter = {
+    data() {
+        return {
+            counter: 0
+        }
+    },
+    mounted() {
+        setInterval(() => {
+            this.counter++
+        }, 1000)
+    }
+}
+```
+等价于
+```
+// 传统k-v形式
+const Counter = {
+    data: function() {
+        return {
+            counter: data.num
+        }
+    },
+    mounted: function() {
+        setInterval(() => {
+            this.counter++
+        }, 1000)
+    }
+}
+```
