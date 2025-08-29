@@ -86,3 +86,14 @@ const Counter = {
     }
 }
 ```
+
+## 操作符 ?. ??
+```
+// ?. 空安全访问
+let a = null;
+let b = a?.name; // b被赋值为undefined，而不是报错
+
+// ?? 左侧的操作数为 null 或者 undefined 时，返回其右侧操作数
+let a = 0 ?? ''; // a赋值为0
+let b = 0 || ''; // b赋值为''
+```
